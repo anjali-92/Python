@@ -1,3 +1,4 @@
+#example taken from https://www.codementor.io/python/tutorial/essential-python-interview-questions
 class A(object):
     def go(self):
         print("go A go!")
