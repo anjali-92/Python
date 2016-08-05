@@ -1,3 +1,4 @@
+#example taken from https://www.codementor.io/python/tutorial/essential-python-interview-questions
 class Node(object):
     def __init__(self,sName):
         self._lChildren = []

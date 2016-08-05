@@ -1,3 +1,5 @@
+#example taken from https://www.codementor.io/python/tutorial/essential-python-interview-questions
+
 class MyClass(object):
     def __init__(self):
         self._some_property = "properties are nice"
