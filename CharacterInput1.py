@@ -10,19 +10,25 @@ Extras:
 '''
 
 import sys
-Name = raw_input("Enter your name")
-Age = int(raw_input("Enter your age"))
-CelebrateThisYear = raw_input("Did u celebrate your birthday this year")
+Name = raw_input("Enter your name   :")
+Age = int(raw_input("Enter your age   :"))
+CelebrateThisYear = raw_input("Did u celebrate your birthday this year   :")
 if CelebrateThisYear not in ['Y','Yes','YES']:
 	Age = Age + 1
-
-Times = int(raw_input("Enter a number"))
-if Age <= 0:
-	sys.exit(1)
-
+if Age<=0:
+    sys.exit(1)
 from datetime import date
 Year = date.today().year
 
 RemainingAge = 100 - Age
+
+year = Year + RemainingAge
+print "You will turn 100 in year " + str(year)
+
+
 #Extras 1
-print (Times * "Year in which u will become 100 is :",Year + RemainingAge)
+Times = int(raw_input("Enter a number   :"))
+#Extras 2
+print (("\nYou will turn 100 in year  "  + str(year)) * Times)
+
+
