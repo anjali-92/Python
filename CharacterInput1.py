@@ -25,6 +25,3 @@ Year = date.today().year
 RemainingAge = 100 - Age
 #Extras 1
 print (Times * "Year in which u will become 100 is :",Year + RemainingAge)
-#Extras 2
-for i in range(0,Times):
-	print "Year in which u will become 100 is :",Year + RemainingAge
