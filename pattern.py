@@ -661,13 +661,20 @@ print '\n------------------------'
 # 40.Accept string from user and print in following format.
 # Input string : PIYUSH
 # Output :
-# P I Y U S H
-# P I Y U S
-# P I Y U
-# P I Y
-# P I
-# P
+# A N J A L I
+# A N J A L
+# A N J A
+# A N J
+# A N
+# A
 # 
+
+print
+name = ['A', 'N', 'J', 'A', 'L', 'I']
+for i in range(len(name)):
+    for j in range(len(name)-i):
+        print name[j],
+    print
 print '\n------------------------'    
 ######################################################################
 # 41.Accept string from user and print in following format.
@@ -678,6 +685,17 @@ print '\n------------------------'
 # P i Y
 # P i
 # P
+
+print
+name = ['A', 'N', 'J', 'A', 'L', 'I']
+for i in range(len(name)):
+    for j in range(len(name)-i):
+        if (j+1)%2 == 0:
+            print name[j].lower(),
+        else:
+            print name[j],
+    print
+
 print '\n------------------------'    
 ######################################################################
 # 42.Accept string from user and print in following format.
