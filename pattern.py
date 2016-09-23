@@ -736,6 +736,19 @@ print '\n------------------------'
 # 	        S
 # 		S D
 # 		S D K
+print
+names = [['U', 'N', 'I', 'X'], ['W', 'I', 'N', '3', '2'], ['S', 'D', 'K']]
+spaces = 0
+# needed because print with ',' adds space after printing
+import sys
+for name in names:
+    for i in range(len(name)):
+        if spaces:
+            sys.stdout.write(' '*spaces)
+        for j in range(i+1):
+            print name[j],
+        print
+    spaces = spaces + (len(name)-1) + (len(name) - 1)
 print '\n------------------------'    
 ######################################################################
 # 44.Accept n from user and print in following format.
