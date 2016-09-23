@@ -679,12 +679,12 @@ print '\n------------------------'
 ######################################################################
 # 41.Accept string from user and print in following format.
 # Input string : PIYUSH
-# P i Y u S h
-# P i Y u S
-# P i Y u
-# P i Y
-# P i
-# P
+# A n J a L i
+# A n J a L
+# A n J a
+# A n J
+# A n
+# A
 
 print
 name = ['A', 'N', 'J', 'A', 'L', 'I']
@@ -712,6 +712,14 @@ print '\n------------------------'
 # S
 # S D
 # S D K
+print
+names = [['U', 'N', 'I', 'X'], ['W', 'I', 'N', '3', '2'], ['S', 'D', 'K']]
+
+for name in names:
+    for i in range(len(name)):
+        for j in range(i+1):
+            print name[j],
+        print
 print '\n------------------------'    
 ######################################################################
 # 43.Accept string from user and print in following format.
@@ -721,16 +729,16 @@ print '\n------------------------'
 # U N I
 # U N I X
 #       W
-# 	  W I
-# 	  W I N
-# 	  W I N 3
-# 	  W I N 3 2
-# 			  S
-# 			  S D
-# 			  S D K
+# 	W I
+# 	W I N
+# 	W I N 3
+# 	W I N 3 2
+# 	        S
+# 		S D
+# 		S D K
 print '\n------------------------'    
 ######################################################################
-# 43.Accept n from user and print in following format.
+# 44.Accept n from user and print in following format.
 #     5
 #   5 4
 # 5 4 3
