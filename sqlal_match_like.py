@@ -33,7 +33,7 @@ for name, fullname in session.query(User.name, User.fullname):
     print(name, fullname)
 
 print "------------------------"
-for row in session.query(User.name).filter( User.name.ilike('%ed1%')):
+for row in session.query(User.name).filter( User.name.like('%ed1%')):
     print row
 print "------------------------"
 import os
