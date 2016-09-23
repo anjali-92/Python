@@ -643,14 +643,19 @@ print '\n------------------------'
 # 39.Accept string from user and print in following format.
 # Input string : PIYUSH
 # Output :
-# P
-# P I
-# P I Y
-# P I Y U
-# P I Y U S
-# P I Y U S H
+# A
+# A N
+# A N J
+# A N J A
+# A N J A L
+# A N J A L I
 
-
+print
+name = ['A', 'N', 'J', 'A', 'L', 'I']
+for i in range(len(name)):
+    for j in range(i+1):
+        print name[j],
+    print
 
 print '\n------------------------'    
 # 40.Accept string from user and print in following format.
