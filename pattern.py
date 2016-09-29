@@ -641,7 +641,7 @@ for i in range(rows):
 print '\n------------------------'    
 ######################################################################
 # 39.Accept string from user and print in following format.
-# Input string : PIYUSH
+# Input string : ANJALI
 # Output :
 # A
 # A N
@@ -659,7 +659,7 @@ for i in range(len(name)):
 
 print '\n------------------------'    
 # 40.Accept string from user and print in following format.
-# Input string : PIYUSH
+# Input string : ANJALI
 # Output :
 # A N J A L I
 # A N J A L
@@ -678,7 +678,7 @@ for i in range(len(name)):
 print '\n------------------------'    
 ######################################################################
 # 41.Accept string from user and print in following format.
-# Input string : PIYUSH
+# Input string : ANJALI
 # A n J a L i
 # A n J a L
 # A n J a
@@ -758,11 +758,19 @@ print '\n------------------------'
 #   3 2
 #     1
 
+print
+n = 5
+half = (n/2)+1
+
+#pattern_rows = [[0]*half for row in range(5)]
+pattern_rows = [ [0]*half ]* n
+
+print pattern_rows
+
+for i in range(n):
+    for j in range(half):
+        print 0,
+    print
+
 print '\n------------------------'    
-
-
-
-
-
-
 
