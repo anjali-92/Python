@@ -55,6 +55,19 @@ def gcd_3(m, n):
             #return i
             break
 
+def gcd_recursive(m,n):
+    '''
+    It calculates gcd recursively.
+    '''
+    if m < n: 
+        (m,n) = (n,m)
+
+    if (m % n) == 0:
+        return(n)
+    else:
+        diff = m-n
+        return (gcd_recursive(max(n,diff),min(n,diff)))
+    
 def main():
     '''
     For all the implemented functions time is almost same 
@@ -65,6 +78,6 @@ def main():
     gcd_1(6,5)
     gcd_2(6,12)
     gcd_3(6,12)
-
+    gcd_recursive(15,18)
 if __name__ == "__main__":
     main()
